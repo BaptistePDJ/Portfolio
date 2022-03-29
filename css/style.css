@@ -1,24 +1,67 @@
+:root {
+    --main-bg-color: #6320EE;
+}
+/*for the header*/
+.bandeau {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*The biggest division usefull for the background*/
+.div3 {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+/*The white division*/
+.div4 {
+    margin-left: 14%;
+    margin-right: 14%;
+    padding: 2%;
+}
 /* Grid */
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
     grid-gap: 10px;
     padding-top: 50px;
     height: 700px;
 }
 .div-menu {
-    padding: 30%;
-    background-color: #EABE15;
     box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
     border: solid 1px #7FBCBC;
-    grid-column: 12 / 12;
-    grid-row: 1 / 13;
+    grid-column: 1 / 1;
+    grid-row: 1 / 20;
     border-radius: 80px;
-    font-size: 350%;
+    font-size: 300%;
     text-align: center;
-    padding-top: 20%;
 }
 .white {
-    color: white;
+    color: #F8F0FB;
+}
+.bg-main-color {
+    background-color: var(--main-bg-color);;
+}
+.ash-grey {
+    color: #8075FF;
+}
+.titles {
+    font-size: 50px;
+    text-align: center;
+}
+.footer {
+    grid-column: 1 / 12;
+    grid-row: 24 / 24;
+}
+.row {
+    margin-right: auto;
+}
+.photo {
+    grid-column: 3 / 9;
+    grid-row: 1 / 12;
+}
+.photo img {
+    height: 100%;
 }
