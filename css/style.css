@@ -35,8 +35,11 @@
     grid-column: 1 / 1;
     grid-row: 1 / 20;
     border-radius: 80px;
-    font-size: 300%;
+    font-size: 250%;
     text-align: center;
+    position: fixed;
+    left: 1%;
+    padding: 0.5rem;
 }
 .white {
     color: #F8F0FB;
@@ -64,4 +67,7 @@
 }
 .photo img {
     height: 100%;
-}
+}.link:hover {
+    color: #8075FF;
+    cursor: pointer;
+ }
