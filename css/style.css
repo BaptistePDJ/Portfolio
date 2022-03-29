@@ -1,0 +1,24 @@
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 10px;
+    padding-top: 50px;
+    height: 700px;
+}
+.div-menu {
+    padding: 30%;
+    background-color: #EABE15;
+    box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
+    border: solid 1px #7FBCBC;
+    grid-column: 12 / 12;
+    grid-row: 1 / 13;
+    border-radius: 80px;
+    font-size: 350%;
+    text-align: center;
+    padding-top: 20%;
+}
+.white {
+    color: white;
+}
