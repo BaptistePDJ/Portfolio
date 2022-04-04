@@ -102,3 +102,9 @@ body {
     color: #8075FF;
     cursor: pointer;
  }
+.logo {
+    text-align: center;
+}
+.logo img {
+    height: 100%;
+}
