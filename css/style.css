@@ -35,15 +35,6 @@ body {
     margin-right: 14%;
     padding: 2%;
 }
-/* Grid */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: repeat(50, 1fr);
-    grid-gap: 10px;
-    padding-top: 50px;
-    height: 700px;
-}
 .div-menu {
     box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
     border: solid 1px #7FBCBC;
