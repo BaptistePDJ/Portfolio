@@ -1,0 +1,98 @@
+:root {
+    --main-bg-color: #6320EE;
+}
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../public/fonts/FuturaPT-Book.eot');
+    src: url('../public/fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/FuturaPT-Book.woff2') format('woff2'),
+    url('../public/fonts/FuturaPT-Book.woff') format('woff'),
+    url('../public/fonts/FuturaPT-Book.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+/*for the header*/
+.bandeau {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*The biggest division usefull for the background*/
+.div3 {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    padding-left: 10%;
+}
+/*The white division*/
+.div4 {
+    margin-left: 14%;
+    margin-right: 14%;
+    padding: 2%;
+}
+.div-menu {
+    box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
+    border: solid 1px #7FBCBC;
+    border-radius: 80px;
+    font-size: 250%;
+    text-align: center;
+    position: fixed;
+    left: 1%;
+    padding: 0.5rem;
+    margin-top: 5%;
+}
+.white {
+    color: #F8F0FB;
+}
+.bg-main-color {
+    background-color: var(--main-bg-color);;
+}
+.ash-grey {
+    color: #8075FF;
+}
+.titles {
+    font-size: 50px;
+    text-align: center;
+}
+.footer {
+    grid-column: 1 / 12;
+    grid-row: 50 / 50;
+}
+.row {
+    margin-right: auto;
+}
+.content {
+    display: flex;
+    padding-left: 3%;
+}
+.content img {
+    height: 25rem;
+}
+.content p {
+    font-size: 200%;
+    max-width: 50%;
+}
+.title {
+    color: #2044EE;
+    font-size: 500%;
+    text-align: center;
+    font-weight: bold;
+}
+.photo img {
+    height: 100%;
+}
+.link:hover {
+    color: #8075FF;
+    cursor: pointer;
+ }
+.logo {
+    text-align: center;
+}
+.logo img {
+    height: 100%;
+}
