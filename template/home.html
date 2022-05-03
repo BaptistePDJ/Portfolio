@@ -5,13 +5,14 @@
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="container-fluid bandeau">
         <div class="row bg-main-color">
-            <div class="col-sm"><img src="../public/images/logo-utbm.png"></div>
-            <div class="col-sm logo"><img src="../public/images/logo-baptiste.png"> </div>
+            <div class="col-sm center"><img src="../public/images/logo-utbm.png"></div>
+            <div class="col-sm center logo"><img src="../public/images/logo-baptiste-removebg.png"> <a style="float: right"><i class="fa-regular fa-moon" id="dark-mode-btn" onclick="switchToDarkMode()"></i></a></div>
         </div>
     </div>
     <div class="container-fluid div3">
@@ -29,13 +30,13 @@
             <i class="fa fa-ellipsis-v ash-grey" aria-hidden="true"></i>
             <br>
             <a href="#projects">
-                <i class="fa fa-lightbulb-o white link" aria-hidden="true"></i>
+                <i class="fa-regular fa-lightbulb white link" aria-hidden="true"></i>
             </a>
             <br>
             <i class="fa fa-ellipsis-v ash-grey" aria-hidden="true"></i>
             <br>
             <a href="#contact">
-                <i class="fa fa-paper-plane-o white link" aria-hidden="true"></i>
+                <i class="fa-regular fa-paper-plane white link" aria-hidden="true"></i>
             </a>
         </div>
         <div class="row title" id="about-me">À propos de moi :</div>
@@ -64,8 +65,29 @@
             <p class="col-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
     </div>
-    <footer class="footer row" style="background-color: whitesmoke;">
+    <footer class="footer row">
         &copy Baptiste PERRAT DIT JANTON 2022
     </footer>
 </body>
+<script>
+    function switchToDarkMode(){
+        if ($(".bg-main-color").hasClass("dark-mode")) {
+            $(".bg-main-color").removeClass("dark-mode");
+            $(".ash-grey").removeClass("dark-mode");
+            $(".div3").removeClass("dark-mode");
+            $(".title").removeClass("dark-mode");
+            $("p").removeClass("dark-mode");
+            $(".footer").removeClass("dark-mode");
+            $(".fa-sun").addClass("fa-moon").removeClass("fa-sun");
+        }else {
+            $(".bg-main-color").addClass("dark-mode");
+            $(".ash-grey").addClass("dark-mode");
+            $(".div3").addClass("dark-mode");
+            $(".title").addClass("dark-mode");
+            $("p").addClass("dark-mode");
+            $(".footer").addClass("dark-mode");
+            $(".fa-moon").addClass("fa-sun").removeClass("fa-moon");
+        }
+    }
+</script>
 </html>

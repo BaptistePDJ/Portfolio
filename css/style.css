@@ -15,6 +15,9 @@
 body {
     font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
+p.dark-mode {
+    color: whitesmoke!important;
+}
 /*for the header*/
 .bandeau {
     width: 100%;
@@ -29,6 +32,9 @@ body {
     background-color: whitesmoke;
     padding-left: 10%;
 }
+.div3.dark-mode {
+    background-color: #42414d!important;
+}
 /*The white division*/
 .div4 {
     margin-left: 14%;
@@ -36,7 +42,8 @@ body {
     padding: 2%;
 }
 .div-menu {
-    box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
+    /*box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);*/
+    box-shadow: 3px 5px 13px 0;
     border: solid 1px #7FBCBC;
     border-radius: 80px;
     font-size: 250%;
@@ -46,14 +53,23 @@ body {
     padding: 0.5rem;
     margin-top: 5%;
 }
+.div-menu.dark-mode {
+    border-color: #6320EE!important;
+}
 .white {
     color: #F8F0FB;
 }
 .bg-main-color {
-    background-color: var(--main-bg-color);;
+    background-color: var(--main-bg-color);
+}
+.bg-main-color.dark-mode {
+    background-color: black!important;
 }
 .ash-grey {
     color: #8075FF;
+}
+.ash-grey.dark-mode {
+    color: var(--main-bg-color)!important;
 }
 .titles {
     font-size: 50px;
@@ -62,6 +78,11 @@ body {
 .footer {
     grid-column: 1 / 12;
     grid-row: 50 / 50;
+    background-color: whitesmoke;
+}
+.footer.dark-mode{
+    background-color: black!important;
+    color: whitesmoke!important;
 }
 .row {
     margin-right: auto;
@@ -83,6 +104,9 @@ body {
     text-align: center;
     font-weight: bold;
 }
+.title.dark-mode {
+    color: #8954F2!important;
+}
 .photo img {
     height: 100%;
 }
@@ -90,9 +114,15 @@ body {
     color: #8075FF;
     cursor: pointer;
  }
-.logo {
-    text-align: center;
-}
 .logo img {
     height: 100%;
+}
+.center {
+    text-align: center;
+}
+#dark-mode-btn {
+    font-size: 170%;
+    color: whitesmoke;
+    margin-top: 40%;
+    cursor: pointer;
 }
